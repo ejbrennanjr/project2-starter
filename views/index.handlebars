@@ -2,7 +2,16 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
+        <div>
+          <h6 class="d-flex justify-content-end"><a href="/profile">{{ user.displayName }}</a>  |  <a href="/logout">Logout</a></h6>
+          <h1>{{msg}}</h1>
+          <h3 id="user-info" class="d-flex flex-column align-self-end">
+              
+          </h3>
+        </div>
+
+
+        
         <h2>This is our Home Page!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
